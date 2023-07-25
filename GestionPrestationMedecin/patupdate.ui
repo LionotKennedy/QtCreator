@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PatUpdate</class>
+ <widget class="QDialog" name="PatUpdate">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>350</width>
+    <height>550</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog
+{
+	background-color: rgb(255, 255, 255);
+}</string>
+  </property>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>10</y>
+     <width>301</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 16pt &quot;Snap ITC&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Edit list Patient</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>470</y>
+     <width>201</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="pushButton">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+	font: 16pt &quot;Snap ITC&quot;;
+}
+QPushButton
+{
+	font: 16pt &quot;Snap ITC&quot;;
+
+	background-color: rgb(255, 255, 255);
+	color:rgb(0, 85, 255) ;
+	border-color: rgb(0,85,255);
+	border-style: solid 5px;
+	border : 1px solid rgb(0,85,255);
+	border-radius: 10px;
+}
+QPushButton:hover
+{
+border : 2px solid rgb(0,0,255);
+color : rgb(0, 0, 255);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>No</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="yes">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+font: 16pt &quot;Snap ITC&quot;;
+}
+PushButton
+{
+	/*font: 16pt &quot;Snap ITC&quot;;*/
+}
+QPushButton
+{
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 85, 255) ;
+	border-radius: 10px;
+	font: 14pt &quot;Snap ITC&quot;;
+}
+QPushButton:hover
+{
+	/*background-color: rgb(255, 0, 127);*/
+	background-color: rgb(255, 255, 255);
+	color:  rgb(0, 85, 255) ;
+	border-color:rgb(0, 85, 255) ;
+	border-style: solid 5px;
+	border : 1px solid rgb(0, 85, 255) ;
+	border-radius: 10px;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Yes</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="Line" name="line">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>381</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="orientation">
+    <enum>Qt::Horizontal</enum>
+   </property>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>70</y>
+     <width>332</width>
+     <height>381</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label">
+      <property name="styleSheet">
+       <string notr="true">font: 16pt &quot;Snap ITC&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Number  (PAT) :</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEdit_3">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit
+{
+	border-top:none;
+	border-rigth:none;
+	border-left:none;	
+	border-bottom:1px solid skyblue;
+	font: 11pt &quot;Segoe Script&quot;;
+}</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_2">
+      <property name="styleSheet">
+       <string notr="true">font: 16pt &quot;Snap ITC&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Name :</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit
+{
+	border-top:none;
+	border-rigth:none;
+	border-left:none;	
+	border-bottom:1px solid skyblue;
+	font: 11pt &quot;Segoe Script&quot;;
+}</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_4">
+      <property name="styleSheet">
+       <string notr="true">font: 16pt &quot;Snap ITC&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Address :</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEdit_2">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit
+{
+	border-top:none;
+	border-rigth:none;
+	border-left:none;	
+	border-bottom:1px solid skyblue;
+	font: 11pt &quot;Segoe Script&quot;;
+}</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

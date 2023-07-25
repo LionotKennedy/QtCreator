@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddTrait</class>
+ <widget class="QDialog" name="AddTrait">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>360</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog
+{
+	background-color: rgb(255, 255, 255);
+}</string>
+  </property>
+  <widget class="QWidget" name="horizontalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>580</y>
+     <width>231</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QPushButton" name="refuse">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+font: 14pt &quot;Snap ITC&quot;;
+}
+QPushButton
+{
+	font: 14pt &quot;Snap ITC&quot;;
+
+	background-color: rgb(255, 255, 255);
+	color:rgb(0, 85, 255) ;
+	border-color: rgb(0,85,255);
+	border-style: solid 5px;
+	border : 1px solid rgb(0,85,255);
+	border-radius: 10px;
+}
+QPushButton:hover
+{
+border : 2px solid rgb(0,0,255);
+color : rgb(0, 0, 255);
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Refuse</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="Accpted">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton
+{
+font: 14pt &quot;Snap ITC&quot;;
+}
+QPushButton
+{
+	color: rgb(255, 255, 255);
+	background-color: rgb(0, 85, 255) ;
+	border-radius: 10px;
+	font: 14pt &quot;Snap ITC&quot;;
+}
+QPushButton:hover
+{
+	/*background-color: rgb(255, 0, 127);*/
+	background-color: rgb(255, 255, 255);
+	color:  rgb(0, 85, 255) ;
+	border-color:rgb(0, 85, 255) ;
+	border-style: solid 5px;
+	border : 1px solid rgb(0, 85, 255) ;
+	border-radius: 10px;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>Accepted</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="verticalLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>-10</y>
+     <width>341</width>
+     <height>581</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLabel" name="label_11">
+      <property name="styleSheet">
+       <string notr="true">font: 14pt &quot;Snap ITC&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Medecin :</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="medecin">
+      <property name="styleSheet">
+       <string notr="true">QComboBox
+{
+	border-top:none;
+	border-rigth:none;
+	border-left:none;	
+	border-bottom:1px solid skyblue;
+	font: 11pt &quot;Segoe Script&quot;;
+}</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="styleSheet">
+         <string notr="true">font: 14pt &quot;Snap ITC&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Numero :</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit
+{
+	border-top:none;
+	border-rigth:none;
+	border-left:none;	
+	border-bottom:1px solid skyblue;
+	font: 11pt &quot;Segoe Script&quot;;
+}</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">font: 14pt &quot;Snap ITC&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Name :</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_6">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit
+{
+	border-top:none;
+	border-rigth:none;
+	border-left:none;	
+	border-bottom:1px solid skyblue;
+	font: 11pt &quot;Segoe Script&quot;;
+}</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="styleSheet">
+         <string notr="true">font: 14pt &quot;Snap ITC&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Benefit :</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_4">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit
+{
+	border-top:none;
+	border-rigth:none;
+	border-left:none;	
+	border-bottom:1px solid skyblue;
+	font: 11pt &quot;Segoe Script&quot;;
+}</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="Line" name="line">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_9">
+      <property name="styleSheet">
+       <string notr="true">font: 14pt &quot;Snap ITC&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Patient :</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="patient">
+      <property name="styleSheet">
+       <string notr="true">QComboBox
+{
+	border-top:none;
+	border-rigth:none;
+	border-left:none;	
+	border-bottom:1px solid skyblue;
+	font: 11pt &quot;Segoe Script&quot;;
+}</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_8">
+      <item>
+       <widget class="QLabel" name="label_10">
+        <property name="styleSheet">
+         <string notr="true">font: 14pt &quot;Snap ITC&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Numero :</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_5">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit
+{
+	border-top:none;
+	border-rigth:none;
+	border-left:none;	
+	border-bottom:1px solid skyblue;
+	font: 11pt &quot;Segoe Script&quot;;
+}</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="styleSheet">
+         <string notr="true">
+font: 14pt &quot;Snap ITC&quot;;
+
+</string>
+        </property>
+        <property name="text">
+         <string>Name :</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_8">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit
+{
+	border-top:none;
+	border-rigth:none;
+	border-left:none;	
+	border-bottom:1px solid skyblue;
+	font: 11pt &quot;Segoe Script&quot;;
+}</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_7">
+      <item>
+       <widget class="QLabel" name="label_6">
+        <property name="styleSheet">
+         <string notr="true">font: 14pt &quot;Snap ITC&quot;;
+</string>
+        </property>
+        <property name="text">
+         <string>Address :</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="lineEdit_3">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit
+{
+	border-top:none;
+	border-rigth:none;
+	border-left:none;	
+	border-bottom:1px solid skyblue;
+	font: 11pt &quot;Segoe Script&quot;;
+}</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="Line" name="line_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_8">
+      <property name="styleSheet">
+       <string notr="true">font: 14pt &quot;Snap ITC&quot;;</string>
+      </property>
+      <property name="text">
+       <string>NB Day(s) :</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEdit_2">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit
+{
+	border-top:none;
+	border-rigth:none;
+	border-left:none;	
+	border-bottom:1px solid skyblue;
+	font: 11pt &quot;Segoe Script&quot;;
+}</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLabel" name="label_7">
+      <property name="styleSheet">
+       <string notr="true">font: 14pt &quot;Snap ITC&quot;;</string>
+      </property>
+      <property name="text">
+       <string>Sum :</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="lineEdit_7">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit
+{
+	border-top:none;
+	border-rigth:none;
+	border-left:none;	
+	border-bottom:1px solid skyblue;
+	font: 11pt &quot;Segoe Script&quot;;
+}</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="font">
+         <font>
+          <family>Snap ITC</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 14pt &quot;Snap ITC&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Date</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QDateEdit" name="dateEdit">
+        <property name="styleSheet">
+         <string notr="true">QDateEdit
+{
+	border-top:none;
+	border-rigth:none;
+	border-left:none;	
+	border-bottom:1px solid skyblue;
+	font: 11pt &quot;Segoe Script&quot;;
+}</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

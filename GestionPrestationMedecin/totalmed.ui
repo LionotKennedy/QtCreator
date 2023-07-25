@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>DeleteMed</class>
+ <widget class="QMainWindow" name="DeleteMed">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>352</width>
+    <height>389</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow
+{
+	background-color: rgb(255, 255, 255);
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>541</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="styleSheet">
+        <string notr="true">font: 16pt &quot;Snap ITC&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Sum (MED):</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <item>
+        <widget class="QComboBox" name="comboBox">
+         <property name="styleSheet">
+          <string notr="true">QComboBox
+{
+	border-top:none;
+	border-rigth:none;
+	border-left:none;	
+	border-bottom:1px solid skyblue;
+	font: 16pt &quot;Segoe Script&quot;;
+}</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="label_3">
+         <property name="styleSheet">
+          <string notr="true">font: 16pt &quot;Snap ITC&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Ar</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>250</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButton">
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/*QPushButton
+{
+	font: 16pt &quot;Snap ITC&quot;;
+}
+QPushButton
+{
+	font: 16pt &quot;Snap ITC&quot;;
+
+	background-color: rgb(255, 255, 255);
+	color:rgb(0, 85, 255) ;
+	border-color: rgb(0,85,255);
+	border-style: solid 5px;
+	border : 1px solid rgb(0,85,255);
+	border-radius: 10px;
+}
+QPushButton:hover
+{
+border : 2px solid rgb(0,0,255);
+color : rgb(0, 0, 255);
+}*/
+
+QPushButton
+{
+	font: 16pt &quot;Snap ITC&quot;;
+}
+QPushButton
+{
+	font: 16pt &quot;Snap ITC&quot;;
+
+	background-color: rgb(255, 255, 255);
+	color: rgb(83, 83, 83);
+	border-color: rgb(83, 83, 83);
+	border-style: solid 5px;
+	border : 1px solid rgb(83, 83, 83);
+	border-radius: 10px;
+}
+QPushButton:hover
+{
+	border : 2px solid  rgb(31, 31, 31);
+	color: rgb(31, 31, 31);
+	background-color: rgb(236, 236, 236);
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Closed</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>352</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
